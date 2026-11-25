@@ -1,0 +1,161 @@
+{
+  "subjects_available": [
+    1
+  ],
+  "recordings": 2,
+  "minutes_total": 36.07,
+  "samples_total": 4327442,
+  "nonfinite": 0,
+  "lag_boundary_reps": 43,
+  "lag_reps": 240,
+  "lag_by_exercise": {
+    "1": 0.931,
+    "2": 0.661
+  },
+  "onset_lag_median_s": 0.751,
+  "onset_lag_iqr_s": [
+    0.2735,
+    0.986
+  ],
+  "offset_lag_median_s": -0.641,
+  "move_dur_median_s": 3.89175,
+  "move_dur_min_s": 1.9045,
+  "move_dur_max_s": 6.573,
+  "rest_pct": 52.85637566026304,
+  "label_disagreement_pct": 18.5046264005387,
+  "class_share_move_min": 0.6676692605007764,
+  "class_share_move_max": 1.7672102826565903,
+  "imbalance_rest_to_mean_move": 44.84710405747133,
+  "snr_db_min": -1.6725,
+  "snr_db_max": 12.0752,
+  "snr_best_electrode": 8,
+  "snr_worst_electrode": 12,
+  "at_extreme_pct_max": 0.00011129338494378572,
+  "flat_pct_max": 3.951961536348759e-05,
+  "kurtosis_median": 49.56078040642983,
+  "line50_ratio_median": 1.0667981174611447,
+  "line50_ratio_max": 3.4370694307395695,
+  "line50_electrodes_over_2": [
+    1
+  ],
+  "line250_electrodes_over_2": [
+    3,
+    6
+  ],
+  "median_freq_move_Hz": 81.25813802083333,
+  "median_freq_rest_Hz": 71.96044921875,
+  "pct_below20_move": 5.262195413702994,
+  "pct_below20_move_max_channel": 29.982446104117916,
+  "pct_inband_move": 93.78203406381756,
+  "imu_pct_above64": {
+    "acc": 0.07916321334181342,
+    "gyro": 0.009430543312344913,
+    "mag": 0.02478894970328745
+  },
+  "windows_train": 106831,
+  "windows_val": 33843,
+  "windows_test": 66261,
+  "windows_total": 206935,
+  "windows_rest_pct": 53.0,
+  "channel_corr_mean": 0.46586207963200243,
+  "channel_corr_max": 0.8780503345212441,
+  "fisher_median": {
+    "emg": 1.062,
+    "acc": 3.271,
+    "gyro": 0.011,
+    "mag": 8.089
+  },
+  "rms_by_rep": [
+    15.710381031036377,
+    16.16824769973755,
+    16.37225866317749,
+    14.214073181152344,
+    15.311994075775146,
+    15.051246166229248
+  ],
+  "mdf_by_rep": [
+    82.88043478260869,
+    83.86948529411765,
+    84.12174312659846,
+    83.4186680786445,
+    84.54883312020459,
+    84.46890984654732
+  ],
+  "mag_shift_by_rep": [
+    0.0,
+    0.23529062420129776,
+    0.3801572024822235,
+    0.589798703789711,
+    0.5510090738534927,
+    0.6076032817363739
+  ],
+  "checks": {
+    "train/test repetitions disjoint": true,
+    "dev train/val/test disjoint and cover 1..6": true,
+    "no sample belongs to two segments": true,
+    "every movement has 4 train and 2 test repetitions": true,
+    "every movement segment is long enough for one window": true
+  },
+  "manifest_rows": 480,
+  "manifest_sha256_prefix": "b1697fbc65621bb7",
+  "leakage": {
+    "1-nearest neighbour": {
+      "random": 99.11970560646512,
+      "repetition": 81.01389410439353
+    },
+    "ExtraTrees (60 trees)": {
+      "random": 97.42405656973807,
+      "repetition": 86.9770935035674
+    },
+    "LDA": {
+      "random": 85.40298722851577,
+      "repetition": 84.22831393165603
+    }
+  },
+  "leak_shared_pct": 100.0,
+  "baseline_P1": [
+    {
+      "task": "40 classes (no rest)",
+      "inputs": "sEMG",
+      "accuracy": 68.59,
+      "balanced_accuracy": 69.1,
+      "macro_f1": 69.4
+    },
+    {
+      "task": "40 classes (no rest)",
+      "inputs": "sEMG+ACC",
+      "accuracy": 87.23,
+      "balanced_accuracy": 86.68,
+      "macro_f1": 87.09
+    },
+    {
+      "task": "40 classes (no rest)",
+      "inputs": "sEMG+ACC+gyro+mag",
+      "accuracy": 95.28,
+      "balanced_accuracy": 94.88,
+      "macro_f1": 95.24
+    },
+    {
+      "task": "41 classes",
+      "inputs": "sEMG",
+      "accuracy": 77.62,
+      "balanced_accuracy": 62.78,
+      "macro_f1": 63.92
+    },
+    {
+      "task": "41 classes",
+      "inputs": "sEMG+ACC",
+      "accuracy": 85.15,
+      "balanced_accuracy": 78.9,
+      "macro_f1": 79.92
+    },
+    {
+      "task": "41 classes",
+      "inputs": "sEMG+ACC+gyro+mag",
+      "accuracy": 86.82,
+      "balanced_accuracy": 85.34,
+      "macro_f1": 85.12
+    }
+  ],
+  "majority_accuracy": 51.47673593818385
+}

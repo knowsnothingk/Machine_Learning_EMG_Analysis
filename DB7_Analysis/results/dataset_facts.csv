@@ -1,0 +1,11 @@
+item,value
+Participants,"22: 20 intact (S1-S20) + 2 right transradial amputees (S21, S22)"
+Intact cohort,"age 22-33 y, 16 right-handed / 4 left-handed (S1, S4, S5, S14)"
+Amputees,"S21: 28 y, accident, 6 y since amputation; S22: 54 y, cancer, 18 y; both 50 % forearm remaining"
+Sensors,"12 Delsys Trigno IM units: sEMG + 3-axis accelerometer, gyroscope, magnetometer"
+Placement,"8 equally spaced around the forearm, 2 on flexor/extensor digitorum, 2 on biceps/triceps"
+Native sampling,sEMG 2 kHz; inertial 128 Hz (released synchronized to the sEMG time base)
+Glove,"CyberGlove II, 18 DOF (uncalibrated; not used as a classifier input)"
+Movements,"40 + rest; Exercise 1: 17 finger/wrist, Exercise 2: 23 grasp/functional"
+Repetitions,"6 per movement, nominally 5 s movement + 3 s rest"
+Known exception,S21 did not perform the last 2 movements (38 classes without rest)
